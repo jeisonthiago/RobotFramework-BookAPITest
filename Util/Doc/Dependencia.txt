@@ -1,0 +1,21 @@
+# 1 — Instalando o Python e pip [Pré-Requisitos]
+
+  # Baixe o Python 2.7.x [https://www.python.org/downloads/] 
+  # OBS.: Podem ocorrer problemas de compatibilidade com o Python 3.10.4
+  # Então recomendam o 2.7 por enquanto.
+  # Instale via executável o Python 2.7. OBS.: 
+  # Defina a variável de ambiente durante a instalação (recomendado).
+
+# 2 — Instalar as dependências
+  # pip install robotframework
+  # pip install robotframework-requests
+
+# 3 — Execução do projeto de automação
+  # robot --exitonfailure -d ./Util/report Test/bookAPITest.robot
+
+  Executar cenários passando uma [Tags]
+  # robot --exitonfailure -d ./Util/report -i GET_todos_os_livros Test/bookAPITest.robot
+  # robot --exitonfailure -d ./Util/report -i GET_apenas_um_livro Test/bookAPITest.robot
+  # robot --exitonfailure -d ./Util/report -i GET_numero_de_autores Test/bookAPITest.robot
+
+
